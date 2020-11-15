@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+//$light-gray: #777;
+
 /* Universal */
 
 body{
@@ -17,10 +19,9 @@ textarea{
 
 .center {
   text-align: center;
-}
-
-.center h1{
-  margin-bottom: 10px;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 /* header */
@@ -33,10 +34,10 @@ textarea{
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-}
-
-#logo:hover{
-  text-decoration: none;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 /* typography */
@@ -59,7 +60,7 @@ h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   font-weight: normal;
-  color: #777;
+  color: $gray-light;
 }
 
 p{
@@ -77,27 +78,22 @@ footer{
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
-}
-
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li{
-  float: left;
-  margin-left: 15px;
+  color: $gray-light;
+  a{
+    color: #555;
+    &:hover{
+      color:#222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul{
+    float: right;
+    list-style:none;
+    li{
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
